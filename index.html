@@ -1,0 +1,758 @@
+<html lang="en" class="p-0 m-0">
+  <head>
+    <meta charset="utf-8" />
+    <title>Toy Store</title>
+    <meta
+      content="The place where your kids are always happy"
+      name="description"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CVarela+Round:400"
+      media="all"
+    />
+    <link rel="stylesheet" href="./Css/output.css" />
+  </head>
+
+  <body
+    class="antialiased font-sans text-gray-700 text-base leading-6 bg-white p-0 m-0"
+  >
+    <!-- Page Wrapper -->
+    <div class="flex flex-col font-sans">
+      <!-- Navigation Bar -->
+      <header class="sticky top-0 z-50 bg-white shadow-md">
+        <!-- Top Navigation -->
+        <div
+          class="h-8 lg:px-32 md:px-20 sm:px-14 py-2 px-6 flex justify-between items-center text-white text-xs leading-4 bg-custom-green"
+        >
+          <div>
+            Call Us: +1 213 974-5898 <span class="pl-2">Email:</span>
+            <a href="#">toystore@template.com</a>
+          </div>
+          <div class="flex space-x-2">
+            <a href="https://twitter.com" target="_blank">
+              <img
+                src="./assets/images/twitter-icon-white.svg"
+                alt="Twitter"
+                class="w-4 h-4"
+              />
+            </a>
+            <a href="https://facebook.com" target="_blank">
+              <img
+                src="./assets/images/facebook-icon-white.svg"
+                alt="Facebook"
+                class="w-4 h-4"
+              />
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img
+                src="./assets/images/instagram-icon-white.svg"
+                alt="Instagram"
+                class="w-4 h-4"
+              />
+            </a>
+            <a href="https://pinterest.com" target="_blank">
+              <img
+                src="./assets/images/pinterest-icon-white.svg"
+                alt="Pinterest"
+                class="w-4 h-4"
+              />
+            </a>
+            <a href="https://youtube.com" target="_blank">
+              <img
+                src="./assets/images/youtube-icon.svg"
+                alt="YouTube"
+                class="w-4 h-4"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Main Navigation -->
+        <div
+          class="h-16 lg:px-32 md:px-20 sm:px-14 px-6 py-4 flex items-center justify-between"
+        >
+          <a href="/" class="text-2xl font-semibold mr-2">ToyStore</a>
+          <div class="hidden md:flex space-x-4">
+            <a href="/catalog" class="px-4 py-2 hover-underline">Catalog</a>
+            <a href="/delivery" class="px-4 py-2 hover-underline">Delivery</a>
+            <a href="/about" class="px-4 py-2 hover-underline">About</a>
+            <a href="/contacts" class="px-4 py-2 hover-underline">Contacts</a>
+          </div>
+          <div class="flex items-center ml-auto">
+            <div class="flex items-center justify-center w-30 text-md">
+              <a href="#">Cart</a>
+              <img
+                src="./assets/images/cart-icon.svg"
+                alt="Cart"
+                class="px-4"
+              />
+              <div
+                class="bg-custom-green rounded-full w-5 h-5 text-center flex items-center justify-center text-white"
+              >
+                0
+              </div>
+            </div>
+            <button
+              id="mobile-menu-button"
+              class="md:hidden focus:outline-none ml-4"
+              aria-label="menu"
+              role="button"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <nav
+          id="mobile-menu"
+          class="hidden md:hidden flex-col bg-white shadow-md"
+        >
+          <a href="/catalog" class="block px-4 py-2 hover:bg-gray-100"
+            >Catalog</a
+          >
+          <a href="/delivery" class="block px-4 py-2 hover:bg-gray-100"
+            >Delivery</a
+          >
+          <a href="/about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+          <a href="/contacts" class="block px-4 py-2 hover:bg-gray-100"
+            >Contacts</a
+          >
+        </nav>
+      </header>
+      <!--------------------------------------------------------------------------------------------------------------------------->
+      <main>
+        <!-- Hero Section -->
+        <section
+          class="w-full h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat bg-center overflow-hidden"
+          style="
+            background-image: url('./assets/images/unsplash.jpg');
+            background-position: center calc(50% - 16rem);
+          "
+        >
+          <div
+            class="container flex flex-col justify-center items-center p-4 text-white text-4 mb-40 lg:mb-44 xl:mb-36"
+          >
+            <div
+              class="p-8 md:py-10 md:px-14 lg:py-12 lg:px-16 xl:py-16 xl:px-20 flex flex-col justify-center items-center rounded-2xl bg-white text-center animate-grow"
+            >
+              <div
+                class="text-center mb-4 text-custom-green text-sm leading-4 font-semibold mx-0"
+              >
+                Say Hello to ToyStore!
+              </div>
+              <h1
+                class="text-black text-center mb-5 text-xl md:text-4xl leading-6 mx-0 font-varela-round"
+              >
+                Free Ecommerce<br />Template for Webflow
+              </h1>
+              <a
+                class="text-white border-0 no-underline cursor-pointer h-12 px-7 py-3 justify-center font-semibold rounded-full bg-custom-green hover-elevate mx-0"
+                href="/catalog"
+                >Open Catalog</a
+              >
+            </div>
+          </div>
+          <a
+            href="#Scroll-Section"
+            class="hidden bg-white lg:flex item-center justify-center max-w-full mx-auto ml-auto mr-auto w-16 h-16 lg:mb-24 xl:mb-16 2xl:-mb-4 absolute bottom-0 right-0 left-0 z-2 rounded-full shadow-sm animat-grow"
+          >
+            <div
+              class="w-6 h-10 border-2 border-gray-400 rounded-xl relative mx-0 my-auto"
+            >
+              <div
+                class="w-2 h-2 rounded-full bg-gray-300 animate-mouse-wheel absolute left-1.5"
+              ></div>
+            </div>
+          </a>
+        </section>
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <!-- Categories Section -->
+        <section
+          class="flex flex-col lg:flex-row justify-center items-center gap-4 tab:gap-12 w-full px-10 py-6 md-mob:px-14 sm:px-16 md:px-20 md:py-8 tab:px-28 lg:py-10"
+        >
+        <div
+        class="relative bg-custom-yellow rounded-2xl animate-grow mx-3 py-12 px-6 tab:py-16 tab:px-10 flex flex-col items-center justify-center md-mob:flex-row w-72 h-72 md-mob:h-auto md-mob:w-2/3 tab:w-full"
+      >
+            <img
+              src="./assets/images/plush-toy-transparent-image-min-p-500.png"
+              alt="Stuffed Animals"
+              class="w-36 h-36 md-mob:w-44 md-mob:h-44 lg:w-56 lg:h-56 xl:w-60 xl:h-60 tab:absolute tab:top-[-55px] tab:left-6  "
+            />
+            <div
+              class="flex flex-col items-center md-mob:justify-center lg:items-start ml-0 md-mob:ml-1 lg:ml-48 xl:ml-60 h-auto"
+            >
+              <h3
+                class="text-center text-white mt-2 md-mob:mt-4 lg:mt-0 font-varela-round text-md tab:text-xl lg:text-2xl leading-9 font-normal mb-2 md-mob:mb-2 lg:mb-4 whitespace-nowrap tab:whitespace-normal xl:whitespace-nowrap"
+              >
+                Stuffed Animals
+              </h3>
+              <a
+                href="/catalog"
+                class="cursor-pointer h-10 lg:h-12 px-5 lg:px-7 py-2 lg:py-3 justify-center rounded-full bg-gray-100 transition-shadow duration-300 ease text-gray-700 text-sm leading-6 font-semibold text-center whitespace-nowrap"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative bg-custom-pink rounded-2xl animate-grow mx-3 py-12 px-6 tab:py-16 tab:px-10 flex flex-col items-center justify-center md-mob:flex-row w-72 h-72 md-mob:h-auto md-mob:w-2/3 tab:w-full"
+          >
+            <img
+              src="./assets/images/9-wooden-toy-transparent-image-min-p-500.png"
+              alt="Wooden Toys"
+              class="w-36 h-36 md-mob:w-44 md-mob:h-44 lg:w-56 lg:h-56 xl:w-60 xl:h-60 tab:absolute tab:top-[-55px] tab:right-6  "
+              />
+            <div
+              class="flex flex-col items-center md-mob:justify-center lg:items-start mr-0 md-mob:mr-1 lg:mr-48 xl:mr-60 h-auto"
+            >
+              <h3
+                class="text-center text-white mt-2 md-mob:mt-4 lg:mt-0 font-varela-round text-md tab:text-xl lg:text-2xl leading-9 font-normal mb-2 md-mob:mb-2 lg:mb-4 whitespace-nowrap tab:whitespace-normal xl:whitespace-nowrap"
+              >
+                Wooden Toys
+              </h3>
+              <a
+                href="/catalog"
+                class="cursor-pointer h-10 lg:h-12 px-5 lg:px-7 py-2 lg:py-3 justify-center rounded-full bg-gray-100 transition-shadow duration-300 ease text-gray-700 text-sm leading-6 font-semibold text-center whitespace-nowrap"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+        </section>
+        <!--------------------------------------------------------------------------------------------------------------------------->
+        <!-- Products Section -->
+        <!-- Stuffed Animals-->
+        <section
+          class="flex flex-col items-center justify-center w-full px-6 py-28"
+        >
+          <div class="container mx-auto px-auto tab:px-28">
+            <div class="p-0 m-0">
+              <div
+                class="flex justify-between items-center mb-8 text-black font-varela"
+              >
+                <h3 class="text-100 rounded text-2xl leading-tight m-0">
+                  Stuffed Animals
+                </h3>
+                <div
+                  class="flex justify-center items-center border-b-2 border-gray-200 p-2"
+                >
+                  <a class="text-sm md-mob:text-md" href="/catalog">See All Toys</a
+                  ><img
+                    class="h-3 w-5 md-mob:h-4 md-mob:w-6"
+                    src="./assets/images/min-right-arrow.png"
+                  />
+                </div>
+              </div>
+              <div class="shop-header-line">
+                <div class="shop-header-color"></div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+              <div
+                class="flex items-center justify-center p-12 hover-elevate rounded-lg shadow-lg animate-grow w-72 h-80"
+              >
+                <a
+                  href="/product/teddy-bear"
+                  class="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src="./assets/images/2-plush-toy-transparent-image-min.png"
+                    alt="Teddy Bear"
+                    class="w-40 h-40 object-cover"
+                  />
+                  <h6 class="text-md mt-2">Teddy Bear</h6>
+                  <div
+                    class="w-32 text-sm text-center text-white p-1 mt-2 rounded-full bg-custom-green"
+                  >
+                    $30.00 USD
+                  </div>
+                </a>
+              </div>
+              <div
+                class="flex items-center justify-center p-12 hover-elevate rounded-lg shadow-lg animate-grow w-72 h-80"
+              >
+                <a
+                  href="/product/Plush-Toy"
+                  class="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src="./assets/images/2-plush-toy-transparent-background-min.png"
+                    alt="plush toy"
+                    class="w-40 h-40 object-cover"
+                  />
+                  <h6 class="text-md mt-2">Mega Plush Toy</h6>
+                  <div
+                    class="w-32 text-sm text-center text-white p-1 mt-2 rounded-full bg-custom-green"
+                  >
+                    $38.00 USD
+                  </div>
+                </a>
+              </div>
+              <div
+                class="flex items-center justify-center p-12 hover-elevate rounded-lg shadow-lg animate-grow w-72 h-80"
+              >
+                <a
+                  href="/product/cute-dog"
+                  class="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src="./assets/images/7-plush-toy-file-min.png"
+                    alt="Teddy Bear"
+                    class="w-40 h-40 object-cover"
+                  />
+                  <h6 class="text-md mt-2">Cute Dog</h6>
+                  <div
+                    class="w-32 text-sm text-center text-white p-1 mt-2 rounded-full bg-custom-green"
+                  >
+                    $24.00 USD
+                  </div>
+                </a>
+              </div>
+              <div
+                class="flex items-center justify-center p-12 hover-elevate rounded-lg shadow-lg animate-grow w-72 h-80"
+              >
+                <a
+                  href="/product/little-friend"
+                  class="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src="./assets/images/5-plush-toy-transparent-min.png"
+                    alt="Teddy Bear"
+                    class="w-40 h-40 object-cover"
+                  />
+                  <h6 class="text-md mt-2">Little Friend</h6>
+                  <div
+                    class="w-32 text-sm text-center text-white p-1 mt-2 rounded-full bg-custom-green"
+                  >
+                    $27.00 USD
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <!-- Products Section -->
+        <!-- wooden toys-->
+        <section
+          class="flex flex-col items-center justify-center w-full px-6 py-28"
+        >
+          <div class="container mx-auto px-auto tab:px-28">
+            <div class="p-0 m-0">
+              <div
+                class="flex justify-between items-center mb-8 text-black font-varela"
+              >
+                <h3 class="text-100 rounded text-2xl leading-tight m-0">
+                  Wooden Toys
+                </h3>
+                <div
+                  class="flex justify-center items-center border-b-2 border-gray-200 p-2"
+                >
+                  <a class="text-sm md-mob:text-md" href="/catalog/">See All Toys</a
+                  ><img
+                    class="h-3 w-5 md-mob:h-4 md-mob:w-6"
+                    src="./assets/images/min-right-arrow.png"
+                  />
+                </div>
+              </div>
+              <div class="shop-header-line">
+                <div class="shop-header-color"></div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+              <div
+                class="flex items-center justify-center p-12 hover-elevate rounded-lg shadow-lg animate-grow w-72 h-80"
+              >
+                <a
+                  href="/product/"
+                  class="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src="./assets/images/9-wooden-toy-transparent-image-min.png"
+                    alt="happy flower"
+                    class="w-40 h-40 object-cover"
+                  />
+                  <h6 class="text-md mt-2">Happy Flower</h6>
+                  <div
+                    class="w-32 text-sm text-center text-white p-1 mt-2 rounded-full bg-custom-green"
+                  >
+                    $38.00 USD
+                  </div>
+                </a>
+              </div>
+              <div
+                class="flex items-center justify-center p-12 hover-elevate rounded-lg shadow-lg animate-grow w-72 h-80"
+              >
+                <a
+                  href="/product/"
+                  class="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src="./assets/images/6-wooden-toy-clipart-min.png"
+                    alt="lift machine"
+                    class="w-40 h-40 object-cover"
+                  />
+                  <h6 class="text-md mt-2">Lift Machine</h6>
+                  <div
+                    class="w-32 text-sm text-center text-white p-1 mt-2 rounded-full bg-custom-green"
+                  >
+                    $24.00 USD
+                  </div>
+                </a>
+              </div>
+              <div
+                class="flex items-center justify-center p-12 hover-elevate rounded-lg shadow-lg animate-grow w-72 h-80"
+              >
+                <a
+                  href="/product/"
+                  class="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src="./assets/images/9-wooden-toy-photo-min.png"
+                    alt="wooden camera"
+                    class="w-40 h-40 object-cover"
+                  />
+                  <h6 class="text-md mt-2">Wooden Camera</h6>
+                  <div
+                    class="w-32 text-sm text-center text-white p-1 mt-2 rounded-full bg-custom-green"
+                  >
+                    $32.00 USD
+                  </div>
+                </a>
+              </div>
+              <div
+                class="flex items-center justify-center p-12 hover-elevate rounded-lg shadow-lg animate-grow w-72 h-80"
+              >
+                <a
+                  href="/product/little-rabbit"
+                  class="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src="./assets/images/4-wooden-toy-transparent-min.png"
+                    alt="little-rabbit"
+                    class="w-40 h-40 object-cover"
+                  />
+                  <h6 class="text-md mt-2">Little Rabbit</h6>
+                  <div
+                    class="w-32 text-sm text-center text-white p-1 mt-2 rounded-full bg-custom-green"
+                  >
+                    $16.00 USD
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <!-- Video Section -->
+        <section
+          class="flex flex-col items-center justify-center bg-gray-100 pt-0 pb-28 px-6 w-full bg-cover bg-fixed bg-center"
+          style="
+            padding-top: 120px;
+            background-image: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+              ),
+              url('https://assets.website-files.com/5badda2935e11303a89a461e/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg');
+            background-repeat: repeat, no-repeat;
+          "
+        >
+          <div class="container mx-auto">
+            <div
+              class="flex flex-col items-center justify-center m-0 animate-intro p-3"
+            >
+              <div class="text-white text-md font-bold mb-4">
+                About The Shop
+              </div>
+              <h2 class="text-white text-xl md:text-4xl font-bold mb-4">
+                Watch Our Story
+              </h2>
+              <p class="text-white mb-8 text-sm text-center">
+                There is no magic formula to write perfect ad copy. It is based
+                on a number of factors, including ad placement,<br />
+                demographic, even the consumer’s mood.
+              </p>
+              <a
+                href="#"
+                class="play-button inline-block rounded-full p-3 bg-custom-green"
+              >
+                <img
+                  src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec4b504f1c4031af32_play-icon-white.svg"
+                  alt="Play button"
+                />
+                <script type="application/json" class="w-json">
+                  {
+                    "items": [
+                      {
+                        "url": "https://www.youtube.com/watch?v=lnYZXAIWU8M",
+                        "originalUrl": "https://www.youtube.com/watch?v=lnYZXAIWU8M",
+                        "width": 940,
+                        "height": 528,
+                        "thumbnailUrl": "https://i.ytimg.com/vi/lnYZXAIWU8M/hqdefault.jpg",
+                        "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FlnYZXAIWU8M%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlnYZXAIWU8M&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FlnYZXAIWU8M%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+                        "type": "video"
+                      }
+                    ],
+                    "group": ""
+                  }
+                </script>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!-- About Section -->
+        <section class="py-14 px-10 md:px-16 tab:py-20 tab:px-28">
+          <div class="container">
+            <div class="w-full text-center mb-12 py-12 font-normal">
+              <div class="text-md text-custom-green mb-4">Made for Webflow</div>
+              <p class="text-3xl text-gray-900">
+                Simple & Colorful Ecommerce <br />
+                Template for Your Business
+              </p>
+            </div>
+            <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
+              <div
+                class="flex flex-col justify-center items-center text-center tab:items-start  tab:text-left px-5"
+              >
+                <h2
+                  class="text-xl md:text-4xl text-gray-900 mb-4 font-varela-round"
+                >
+                  Available for FREE!
+                </h2>
+                <div class="w-20 h-0.5 mt-2 mb-6 bg-custom-green"></div>
+                <p class="text-gray-400 text-md mb-10">
+                  A successful marketing plan relies heavily on the
+                  pulling-power of advertising copy. Writing result-oriented ad
+                  copy is difficult, as it must appeal to, entice, and convince
+                  consumers to take action. There is no magic formula to write
+                  perfect ad copy
+                </p>
+                <a
+                  href="/"
+                  aria-current="page"
+                  class="w-40 text-center py-3 px-2 bg-custom-green text-white rounded-full text-nowrap hover-elevate"
+                  >GET IT NOW!</a
+                >
+              </div>
+              <div class="flex items-center justify-center px-2 tab:px-5 animate-grow">
+                <img
+                  src="./assets/images/4_side-image-01-p-1080.jpeg"
+                  alt="About Us"
+                  class="w-full h-auto rounded-2xl shadow"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!-- Newsletter Section -->
+        <section
+          class="flex flex-col items-center justify-center py-12 px-10 md:px-16 tab:px-28 w-full animate-grow"
+        >
+          <div
+            class="container bg-white rounded-lg shadow-lg w-full p-5 tab:p-12 flex flex-col md:flex-row justify-between items-center"
+          >
+            <div class="flex flex-col md:flex-row items-center">
+              <div
+                class="mr-4 bg-custom-green text-center flex items-center justify-center rounded-full w-16 h-16"
+              >
+                <img
+                  src="./assets/images/paperplane-icon-white.svg"
+                  alt="Subscribe Icon"
+                  class="w-12 h-12"
+                />
+              </div>
+              <div>
+                <h4 class="text-md md:text-2xl text-gray-900 my-3">
+                  Subscribe to our newsletter<br />&amp; get
+                  <span class="text-custom-green">10% discount!</span>
+                </h4>
+              </div>
+            </div>
+            <div class="w-full tab:w-1/2 max-w-md">
+              <form
+                name="wf-form-Subscribe-Form"
+                data-name="Subscribe Form"
+                method="get"
+                class="flex flex-col md:flex-row"
+              >
+                <input
+                  class="input w-full px-4 py-2 mx-2 border border-gray-300 rounded-full focus:outline-none focus:border-custom-green"
+                  maxlength="256"
+                  name="email-2"
+                  data-name="Email 2"
+                  placeholder="Enter your email address"
+                  type="email"
+                  id="email-2"
+                  required
+                />
+                <input
+                  type="submit"
+                  data-wait="Please wait..."
+                  class="button bg-custom-green text-white px-6 py-2 my-3 rounded-full hover-elevate"
+                  value="Subscribe"
+                />
+              </form>
+              <div class="form-success hidden">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="form-error hidden">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <section
+          class="h-auto flex flex-col items-center justify-center px:6 md:px-16 tab:px-28 w-full"
+        >
+          <div class="container mx-auto text-center mb-12">
+            <div class="text-sm mb-4 text-custom-green">@Elastic Themes</div>
+            <h2 class="text-xl md:text-4xl text-gray-900 mb-8">
+              We're on Instagram!
+            </h2>
+          </div>
+          
+          <!-------------------------------------------------------->
+          <div class="grid grid-cols-3 gap-5 mb-14 animate-grow tab:grid-cols-6 animate-grow px-2">
+            <a href="https://instagram.com" target="_blank" class="w-full">
+              <img src="./assets/images/instagram-01.jpg" alt="Instagram 01" class="rounded-xl w-full h-auto hover-elevate" />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="w-full">
+              <img src="./assets/images/instagram-02.jpg" alt="Instagram 02" class="rounded-xl w-full h-auto hover-elevate" />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="w-full">
+              <img src="./assets/images/instagram-03.jpg" alt="Instagram 03" class="rounded-xl w-full h-auto hover-elevate" />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="w-full">
+              <img src="./assets/images/instagram-04.jpg" alt="Instagram 04" class="rounded-xl w-full h-auto hover-elevate" />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="w-full">
+              <img src="./assets/images/instagram-05.jpg" alt="Instagram 05" class="rounded-xl w-full h-auto hover-elevate" />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="w-full">
+              <img src="./assets/images/instagram-06.jpg" alt="Instagram 06" class="rounded-xl w-full h-auto hover-elevate" />
+            </a>
+          </div>
+          
+          <!---------------------------------------------------->
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="py-3 px-6 bg-custom-green text-white rounded-full hover-elevate"
+            >See More Photos</a
+          >
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!-- Footer Section -->
+        <footer class="bg-custom-green text-white p-6 md:px-16 tab:px-28 mt-10 md:mt-20 tab:mt-28">
+          <div
+            class="container text-sm mx-1 md-mob:mx-auto px-2 md-mob:px-4 flex flex-col justify-center items-start md:flex-row md:justify-between md:items-center"
+          >
+            <a href="/" class="text-md md-mob:text-xl tab:text-2xl mb-4 md:mb-0">ToyStore</a>
+            <nav class="flex space-x-1 md-mob:space-x-4 text-xs md-mob:text-md tab:text-base">
+              <a href="/" class="text-white hover-underline">Home</a>
+              <a href="/catalog" class="text-white hover-underline">Catalog</a>
+              <a href="/delivery" class="text-white hover-underline"
+                >Delivery</a
+              >
+              <a href="/about" class="text-white hover-underline">About</a>
+              <a href="/contacts" class="text-white hover-underline"
+                >Contacts</a
+              >
+            </nav>
+            <div class="flex space-x-1 md-mob:space-x-4 mt-4 md:mt-0">
+              <a href="https://elasticthemes.com" target="_blank"
+                ><img
+                  src="./assets/images/twitter-icon-white.svg"
+                  class="w-4 h-4"
+                  alt="Twitter"
+              /></a>
+              <a href="https://elasticthemes.com" target="_blank"
+                ><img
+                  src="./assets/images/facebook-icon-white.svg"
+                  class="w-4 h-4"
+                  alt="Facebook"
+              /></a>
+              <a href="https://elasticthemes.com" target="_blank"
+                ><img
+                  src="./assets/images/instagram-icon-white.svg"
+                  class="w-4 h-4"
+                  alt="Instagram"
+              /></a>
+              <a href="https://elasticthemes.com" target="_blank"
+                ><img
+                  src="./assets/images/pinterest-icon-white.svg"
+                  class="w-4 h-4"
+                  alt="Pinterest"
+              /></a>
+              <a href="https://elasticthemes.com" target="_blank"
+                ><img
+                  src="./assets/images/youtube-icon.svg"
+                  class="w-4 h-4"
+                  alt="YouTube"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="text-xs mx-auto px-4 mt-8 flex flex-col md:flex-row justify-between items-center border-t border-white pt-4"
+          >
+            <div class="text-center md:text-left md:w-1/2">
+              <p>
+                Created with love by
+                <a
+                  href="https://elasticthemes.com"
+                  class="text-white"
+                  target="_blank"
+                  >Elastic Themes</a
+                >
+              </p>
+            </div>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+              <p>
+                Powered by
+                <a
+                  href="https://webflow.com/"
+                  class="text-white"
+                  target="_blank"
+                  >Webflow</a
+                >
+              </p>
+              <div class="hidden md:block">|</div>
+              <a href="/template/style-guide" class="text-white">Style Guide</a>
+              <div class="hidden md:block">|</div>
+              <a href="/template/licensing" class="text-white">Licensing</a>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+  </body>
+</html>

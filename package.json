@@ -4,14 +4,17 @@
   "main": "postcss.config.js",
   "type": "module",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./Css/input.css -o ./Css/output.css --watch",
-    "build": "npx tailwindcss -i ./Css/input.css -o ./Css/output.css",
+    "build:css": "npx tailwindcss -i ./Css/input.css -o ./dist/output.css --watch",
+    "build:prod": "cross-env NODE_ENV=production npx tailwindcss -i ./Css/input.css -o ./dist/output.css",
+    "build:copy": "node build.js",
+    "build": "npm run build:prod && npm run build:copy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^3.4.4",
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
     "ansi-regex": "^6.0.1",
@@ -103,3 +106,4 @@
     "yaml": "^2.4.5"
   }
 }
+

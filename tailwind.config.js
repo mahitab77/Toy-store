@@ -1,13 +1,13 @@
 export const content = [
   './index.html',
   './js/**/*.js',
-  './Css/**/*.css' 
+  './Css/**/*.css'
 ];
 export const theme = {
   extend: {
     fontFamily: {
-     'sans': ['Open Sans', 'sans-serif'],
-     'varela-round': ['Varela Round', 'sans-serif'],
+      'sans': ['Open Sans', 'sans-serif'],
+      'varela-round': ['Varela Round', 'sans-serif'],
     },
     colors: {
       'custom-green': '#a5c926',
@@ -19,11 +19,9 @@ export const theme = {
     },
     screens: {
       'tab': '992px',
-      'md-mob':'475px',
+      'md-mob': '475px',
       'sm-mob': '375px',
     },
   },
 };
 export const plugins = [];
-
- 

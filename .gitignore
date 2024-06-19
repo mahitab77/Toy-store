@@ -1,1 +1,14 @@
+# Node.js
 node_modules/
+dist/
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
